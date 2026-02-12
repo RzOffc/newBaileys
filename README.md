@@ -480,6 +480,67 @@ await ourin.sendMessage(jid, {
 }, { quoted: m });
 ```
 
+### Carousel Message
+Send a carousel message with multiple cards:
+
+```javascript
+await ourin.sendMessage(
+    jid,
+    {
+        text: 'Body Message',
+        title: 'Title Message', 
+        subtile: 'Subtitle Message', 
+        footer: 'Footer Message',
+        cards: [
+           {
+              image: { url: 'https://example.com/jdbenkksjs.jpg' }, // or buffer
+              title: 'Title Cards',
+              body: 'Body Cards',
+              footer: 'Footer Cards',
+              buttons: [
+                  {
+                      name: 'quick_reply',
+                      buttonParamsJson: JSON.stringify({
+                         display_text: 'Display Button',
+                         id: 'ID'
+                      })
+                  },
+                  {
+                      name: 'cta_url',
+                      buttonParamsJson: JSON.stringify({
+                         display_text: 'Display Button',
+                         url: 'https://www.example.com'
+                      })
+                  }
+              ]
+           },
+           {
+              video: { url: 'https://example.com/jdbenkksjs.mp4' }, // or buffer
+              title: 'Title Cards',
+              body: 'Body Cards',
+              footer: 'Footer Cards',
+              buttons: [
+                  {
+                      name: 'quick_reply',
+                      buttonParamsJson: JSON.stringify({
+                         display_text: 'Display Button',
+                         id: 'ID'
+                      })
+                  },
+                  {
+                      name: 'cta_url',
+                      buttonParamsJson: JSON.stringify({
+                         display_text: 'Display Button',
+                         url: 'https://www.example.com'
+                      })
+                  }
+              ]
+           }
+        ]
+    }
+)
+```
+
 ### Sticker Pack Message
 Send a sticker pack with multiple stickers in one message:
 
