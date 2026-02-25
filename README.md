@@ -678,7 +678,7 @@ Thanks to the following awesome contributors who help improve this project 💖
     </td>
     <td align="center">
       <a href="https://github.com/RzOffc">
-        <img src="https://avatars.githubusercontent.com/u/246404367?v=4" width="80px;" style="border-radius:50%;" alt="Contributor"/>
+        <img src="https://avatars.githubusercontent.com/u/257822586?v=4" width="80px;" style="border-radius:50%;" alt="Contributor"/>
         <br />
         <sub><b>Rians</b></sub>
       </a>
